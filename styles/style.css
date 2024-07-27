@@ -1,3 +1,39 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container, #details-box {
+    padding: 20px;
+    margin: 10px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#details-box {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 path {
     stroke: white;
     fill:paleturquoise !important;
